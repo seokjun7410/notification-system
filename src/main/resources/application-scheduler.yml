@@ -1,0 +1,8 @@
+notification:
+  scheduler:
+    worker:
+      batch-size: 50
+      polling-delay-ms: 5000
+    recovery:
+      batch-size: 100
+      polling-delay-ms: 60000

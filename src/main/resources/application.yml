@@ -1,0 +1,17 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  application:
+    name: notification
+  config:
+    import: classpath:application-scheduler.yml
+  datasource:
+    url: jdbc:h2:file:./data/notification;MODE=PostgreSQL;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
